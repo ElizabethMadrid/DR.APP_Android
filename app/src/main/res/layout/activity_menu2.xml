@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.practica1.elii.drapp.menu2">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/receta">
+
+        <ImageButton
+            android:layout_width="190dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/expediente"
+            android:layout_alignBottom="@+id/btncitas"
+            android:layout_alignRight="@+id/btnanalisis"
+            android:layout_alignEnd="@+id/btnanalisis"
+            android:onClick="Expediente"
+            android:id="@+id/imageButton4" />
+            android:id="@+id/imageButton3"
+            />
+
+        <ImageButton
+            android:layout_width="190dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/pastillas"
+            android:layout_marginTop="63dp"
+            android:id="@+id/btnreceta"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="Onclick"/>
+
+        <ImageButton
+            android:layout_width="190dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/analisis"
+            android:id="@+id/btnanalisis"
+            android:onClick="Analisis"
+            android:layout_above="@+id/imageButton4"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:layout_width="190dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/citas"
+            android:id="@+id/btncitas"
+            android:layout_below="@+id/btnreceta"
+            android:layout_alignParentLeft="true"
+            android:onClick="Citas"/>
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Receta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnreceta"
+            android:layout_alignRight="@+id/btnreceta"
+            android:layout_alignEnd="@+id/btnreceta"
+            android:layout_marginRight="63dp"
+            android:layout_marginEnd="63dp"
+            android:layout_marginBottom="32dp"
+            android:id="@+id/txtreceta"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            tools:textSize="24sp" />
+
+        <TextView
+            android:text="Análisis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtreceta"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="56dp"
+            android:layout_marginEnd="56dp"
+            android:id="@+id/txtanalisis"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            tools:textSize="24sp" />
+
+        <TextView
+            android:text="Expediente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtexpediente"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            tools:textSize="24sp"
+            android:layout_alignBaseline="@+id/txtcitas"
+            android:layout_alignBottom="@+id/txtcitas"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="34dp"
+            android:layout_marginEnd="34dp" />
+
+        <TextView
+            android:text="Citas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="34dp"
+            android:id="@+id/txtcitas"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            tools:textSize="24sp"
+            android:layout_alignBottom="@+id/btncitas"
+            android:layout_alignRight="@+id/txtreceta"
+            android:layout_alignEnd="@+id/txtreceta" />
+
+    </RelativeLayout>
+
+</LinearLayout>

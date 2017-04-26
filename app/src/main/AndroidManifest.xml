@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.practica1.elii.drapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icono"
+        android:label="@string/app_name"
+        android:gravity="center"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Inicio"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Menu"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait" >
+
+        </activity>
+        <activity android:name=".Receta"
+            android:screenOrientation="portrait" >
+
+        </activity>
+        <activity android:name=".confirmar_datos"
+            android:screenOrientation="portrait" />
+        <activity android:name=".expediente"
+            android:screenOrientation="portrait" />
+        <activity android:name=".recuperar_contrasena"
+            android:screenOrientation="portrait" />
+        <activity android:name=".registrar"
+            android:screenOrientation="portrait" />
+        <activity android:name=".citas"
+            android:screenOrientation="portrait" />
+        <activity android:name=".analisis"
+            android:screenOrientation="portrait" />
+        <activity android:name=".cancelacion"
+            android:screenOrientation="portrait" />
+        <activity android:name=".menu2" ></activity>
+    </application>
+ 
+</manifest>

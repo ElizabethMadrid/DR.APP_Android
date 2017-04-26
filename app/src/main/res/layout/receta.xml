@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:text="              Receta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtreceta"
+        android:layout_weight="0.02"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        tools:textSize="36sp" />
+
+    <TextView
+        android:text="Médico Cirujano: Dr. Verónica Macin Chavez  "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtdoctor"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_weight="0.08" />
+
+    <TextView
+        android:text="N° de Expediente: 000324     Fecha: 04/03/2017"
+        android:layout_width="396dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtexpediente"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_weight="0.07" />
+
+    <TextView
+        android:text="Nombre: Madrid Bautista Elizabeth      Sexo: Femenino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtnombre"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_weight="0.09" />
+
+    <TextView
+        android:text="Alergias: Negados   Peso: 63 Kg   Edad: 25 años   Talla: 1.74 "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtalergias"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_weight="0.07" />
+
+    <TextView
+        android:text="Temperatura: 36°    FC/RC: 70/18 xmin   T.A: 110/80 mm/Hg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txttemperatura"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_weight="0.08" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtid"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:text="I.D. LARINGOFARINGITIS"
+        android:layout_weight="0.06" />
+
+    <TextView
+        android:text="                        TRATAMIENTO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txttratamiento"
+        android:layout_weight="0.02"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        tools:textSize="20sp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="189dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.03"
+                        android:text="1.- CEFALEXINA TAB 1GR"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        tools:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txthora1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.03"
+                        android:text=" 1 tableta cada 8 horas durante 8 días vía de                              administración oral."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        tools:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.03"
+                        android:text="2.- LEVODROPROPIZINA SOL 600MG/100ML"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        tools:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txthora2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.03"
+                        android:text="10 ML cada 8 horas durante 7 días vía de                             administración oral"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        tools:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txt3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.03"
+                        android:text="3.- ACIDO ASCORBICO SABOR NARANJA COMP EFERV 2GR"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        tools:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txthora3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.03"
+                        android:text="1 tableta cada 24 horas durante 10 días via de administración oral"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        tools:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.03"
+                        android:text="4.- NEBULIZACIONES "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        tools:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txthora4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.03"
+                        android:text="Diarias por 10 días"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        tools:textSize="14sp" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
