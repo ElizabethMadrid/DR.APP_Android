@@ -17,12 +17,23 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="25dp"/>
 
+    <TextView
+        android:id="@+id/textfecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20/03/2017"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"/>
+
+
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Alergias"
+        android:text="Alergias: Negadas"
         android:textSize="30dp"
         android:textStyle="bold"
         android:layout_marginLeft="10dp"
@@ -37,6 +48,16 @@
         android:textSize="30dp"
         android:textStyle="bold"
         android:layout_marginTop="90dp"/>
+
+    <TextView
+        android:id="@+id/textfecha1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="27/04/2017"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"/>
 
 
 </LinearLayout>
