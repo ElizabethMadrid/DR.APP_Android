@@ -7,10 +7,47 @@
     android:orientation="vertical"
     tools:context="com.practica1.elii.drapp.citas">
 
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:cardElevation="10dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:gravity="center"
+            android:text="INSTITUTO NACIONAL DE REHABILITACIÓN"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="18dp" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        app:cardElevation="5dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:gravity="center"
+            android:text="AV. MÉXICO XOCHIMILCO 298 COL. ARENAL DE GUADALUPE C.P. 14389 DEL.TLALPAN MÉXICO, D.F CONMUTADOR: 59 99 10 00 "
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="16dp" />
+    </android.support.v7.widget.CardView>
+
     <EditText android:id="@+id/txtTelefono"
         android:layout_height="wrap_content"
         android:layout_width="fill_parent"
         android:hint="Área de cita"
+        android:inputType="text" />
+
+    <EditText android:id="@+id/txtDoctor"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="Doctor"
         android:inputType="text" />
 
     <LinearLayout
@@ -49,6 +86,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
+            android:onClick="Enviar"
             android:text="Enviar" />
 
         <ListView

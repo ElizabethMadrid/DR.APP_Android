@@ -26,7 +26,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Anális Médicos"
+                    android:text="Anális Clínicos"
                     android:textColor="#000"
                     android:textSize="25dp"
                     android:textStyle="bold" />
@@ -76,6 +76,7 @@
                             android:layout_height="2px"
                             android:layout_span="8"
                             android:background="#000"></FrameLayout>
+
                     </TableRow>
 
                     <TableRow

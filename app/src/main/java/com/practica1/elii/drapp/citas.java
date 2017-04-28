@@ -1,6 +1,7 @@
 package com.practica1.elii.drapp;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.icu.util.Calendar;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
@@ -25,6 +26,12 @@ public class citas extends AppCompatActivity {
         ediFecha = (EditText) findViewById(R.id.txtFecha);
     }
 
+    //Boton Enviar
+    public void Enviar (View view) {
+        Intent explicit_intent;
+        explicit_intent = new Intent(this, cancelacion.class);
+        startActivity(explicit_intent);
+    }
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     public void Fecha_Pick(View view) {

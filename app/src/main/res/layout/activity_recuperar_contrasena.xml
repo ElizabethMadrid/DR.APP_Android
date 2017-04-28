@@ -54,6 +54,7 @@
             android:textColor="@color/blanco"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
+            android:onClick="Aceptar"
             android:text="Aceptar"/>
 
 

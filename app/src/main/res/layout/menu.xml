@@ -23,8 +23,7 @@
             android:elevation="15dp"
             android:onClick="Expediente"
             app:srcCompat="@drawable/expediente" />
-        android:id="@+id/btnexpediente"
-        />
+
 
         <ImageButton
             android:id="@+id/btnreceta"
@@ -62,6 +61,7 @@
             android:layout_below="@+id/btnreceta"
             android:background="@android:color/transparent"
             android:elevation="15dp"
+            android:onClick="Onclick"
             app:srcCompat="@drawable/citas" />
 
         <TextView
