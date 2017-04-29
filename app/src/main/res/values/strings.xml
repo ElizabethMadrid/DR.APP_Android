@@ -1,5 +1,5 @@
 <resources>
-   <string name="app_name">DR.APP</string>
+   <String name="app_name">DR.APP</String>
    <String name="textoOpciones">Opciones</String>
       <String-array name="Opciones">
          <item>Ortopedía</item>

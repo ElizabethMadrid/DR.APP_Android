@@ -17,6 +17,8 @@ public class citas extends AppCompatActivity {
     private int dia, mes, ano;
     private EditText ediFecha;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
