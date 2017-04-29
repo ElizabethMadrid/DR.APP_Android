@@ -1,13 +1,5 @@
 <resources>
    <string name="app_name">DR.APP</string>
-   <String name="textoOpciones">Opciones</String>
-      <String-array name="Opciones">
-         <item>Ortopedía</item>
-         <item>Oftalmología</item>
-         <item>Medicina de rehabilitación</item>
-         <item>Otorrinolaringologia</item>
-         <item>Anestesiología</item>
-         <item>Quemadurasa</item>
-         <item>Patología del lenguaje</item>
-      </String-array>
+
+
 </resources>
