@@ -34,6 +34,7 @@ public class citas extends AppCompatActivity {
         spinner.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, letra));
     }
 
+
     //Boton Enviar
     public void Enviar (View view) {
         Intent explicit_intent;
