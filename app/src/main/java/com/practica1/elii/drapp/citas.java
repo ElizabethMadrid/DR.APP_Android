@@ -8,9 +8,11 @@ import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.Spinner;
 
 public class citas extends AppCompatActivity {
     private Button bfecha;
@@ -26,6 +28,10 @@ public class citas extends AppCompatActivity {
 
         bfecha = (Button) findViewById(R.id.bfecha);
         ediFecha = (EditText) findViewById(R.id.txtFecha);
+
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        String[] letra = {"Ortopedía","Oftalmología","Medicina de rehabilitación","Otorrinolaringologia","Anestesiología", "Quemaduras", "Patología del lenguaje"};
+        spinner.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, letra));
     }
 
     //Boton Enviar
