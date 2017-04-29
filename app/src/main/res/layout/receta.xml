@@ -110,9 +110,10 @@
         <FrameLayout
             android:id="@+id/Line"
             android:layout_width="fill_parent"
-            android:layout_height="2px"
+            android:layout_height="15dp"
             android:layout_span="8"
-            android:background="#000"></FrameLayout>
+            android:background="#000"
+            android:visibility="invisible"></FrameLayout>
 
         <TextView
             android:id="@+id/txttratamiento"
@@ -319,7 +320,8 @@
                 android:layout_width="fill_parent"
                 android:layout_height="2px"
                 android:layout_span="8"
-                android:background="#000"></FrameLayout>
+                android:background="#000"
+                android:visibility="invisible"></FrameLayout>
 
             <TextView
                 android:id="@+id/txthora5"
