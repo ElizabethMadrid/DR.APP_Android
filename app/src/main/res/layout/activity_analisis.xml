@@ -183,7 +183,7 @@
                             android:id="@+id/vacidoUrico"
 
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_gravity="center_horizontal"
                             android:padding="5px"
                             android:text="2.5 - 5.4 mg/dL"
