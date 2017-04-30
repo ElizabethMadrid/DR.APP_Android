@@ -265,6 +265,7 @@
                             android:layout_height="wrap_content"
                             android:padding="5px"
                             android:text="CALCIO"
+                            android:onClick="calcio"
                             android:textColor="#000"
                             android:textSize="16sp" />
 
@@ -292,6 +293,7 @@
                             android:layout_height="wrap_content"
                             android:padding="5px"
                             android:text="TRIGLICERIDOS"
+                            android:onClick="trigliceridos"
                             android:textColor="#000"
                             android:textSize="16sp" />
 
@@ -319,6 +321,7 @@
                             android:layout_height="wrap_content"
                             android:padding="5px"
                             android:text="BILIRRUBINA "
+                            android:onClick="bilirrubina"
                             android:textColor="#000"
                             android:textSize="16sp" />
 
@@ -346,6 +349,7 @@
                             android:layout_height="wrap_content"
                             android:padding="5px"
                             android:text="PH"
+                            android:onClick="ph"
                             android:textColor="#000"
                             android:textSize="16sp" />
 
@@ -374,6 +378,7 @@
                             android:layout_height="wrap_content"
                             android:padding="5px"
                             android:text="BACTERIAS"
+                            android:onClick="bacterias"
                             android:textColor="#000"
                             android:textSize="16sp" />
 
