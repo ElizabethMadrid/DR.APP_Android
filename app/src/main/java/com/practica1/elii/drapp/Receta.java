@@ -32,9 +32,6 @@ public class Receta extends AppCompatActivity {
         recyclerView.setAdapter(adapter);*/
     }
 
-    public void button{
-
-    }
 
 
 
