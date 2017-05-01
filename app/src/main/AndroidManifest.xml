@@ -93,8 +93,8 @@
                 android:value=".menu2"/>
         </activity>
 
-
     <activity android:name=".MainActivity">
+
     </activity>
 
 
