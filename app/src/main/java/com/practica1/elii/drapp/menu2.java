@@ -15,7 +15,7 @@ public class menu2 extends AppCompatActivity {
 
     public void Onclick (View view) {
         Intent explicit_intent;
-        explicit_intent = new Intent(this, Receta.class);
+        explicit_intent = new Intent(this, MainActivity.class);
         startActivity(explicit_intent);
     }
 
