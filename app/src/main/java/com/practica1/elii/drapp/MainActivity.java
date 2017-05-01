@@ -1,14 +1,23 @@
 package com.practica1.elii.drapp;
 
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Intent;
+import android.graphics.BitmapFactory;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.NotificationCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     ArrayList<Person> persons;
+    public static final int NOTIFICACION_ID=1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +44,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void Notificacion (View view) {
 
+        Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse("http://developer.android.com/index.html"));
+        PendingIntent pendingIntent=PendingIntent.getActivity(this,0,intent,0);
+
+        //Construccion de la notificacion;
+        NotificationCompat.Builder builder= new NotificationCompat.Builder(this);
+        builder.setSmallIcon(R.drawable.reloj_26);
+        builder.setContentIntent(pendingIntent);
+        builder.setAutoCancel(true);
+        builder.setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.logo_launcher));
+        builder.setContentTitle("Recordatorio");
+        builder.setContentText("CEFALEXINA TAB 1GR");
+        builder.setSubText("Durante 8 Días");
+
+        //Enviar la notificacion
+        NotificationManager notificationManager= (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
+        notificationManager.notify(NOTIFICACION_ID,builder.build());
+
+
+    }
 
 }
