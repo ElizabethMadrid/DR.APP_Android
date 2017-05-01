@@ -72,7 +72,7 @@
                     android:layout_height="60dp"
                     android:layout_weight="1.54"
                     android:max="100"
-                    android:visibility="gone"/>
+                    android:visibility="visible"/>
 
             </LinearLayout>
 
