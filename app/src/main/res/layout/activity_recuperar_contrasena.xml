@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content">
 
                 <AutoCompleteTextView
-                    android:id="@+id/editText2"
+                    android:id="@+id/email_recuperar_pass"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Correo"
@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content">
 
                 <AutoCompleteTextView
-                    android:id="@+id/editText4"
+                    android:id="@+id/pass_recuperar_pass"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="No. de Expediente"
@@ -72,7 +72,7 @@
                     android:layout_height="60dp"
                     android:layout_weight="1.54"
                     android:max="100"
-                    android:visibility="visible"/>
+                    android:visibility="invisible"/>
 
             </LinearLayout>
 
@@ -88,7 +88,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
-                    android:onClick="Aceptar"
+
                     android:text="Aceptar"/>
 
             </LinearLayout>
