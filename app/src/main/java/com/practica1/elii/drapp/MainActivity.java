@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void Notificacion (View view) {
 
-        Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse("http://developer.android.com/index.html"));
+        Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse(""));
         PendingIntent pendingIntent=PendingIntent.getActivity(this,0,intent,0);
 
         //Construccion de la notificacion;
@@ -62,6 +62,15 @@ public class MainActivity extends AppCompatActivity {
         //Enviar la notificacion
         NotificationManager notificationManager= (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
         notificationManager.notify(NOTIFICACION_ID,builder.build());
+
+
+
+        // Sonido por defecto de notificaciones, podemos usar otro
+        Uri defaultSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+// Uso en API 11 o mayor
+        builder.setSound(defaultSound);
+
+
 
 
     }

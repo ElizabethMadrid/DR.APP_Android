@@ -32,11 +32,7 @@ public class analisis extends AppCompatActivity {
     }
     public void AceptarGlucosa() {
 
-
-
     }
-
-
 
     public void colesterol (View view) {
         new AlertDialog.Builder(this)
@@ -54,15 +50,7 @@ public class analisis extends AppCompatActivity {
                 }).create().show();
     }
     public void AceptarColesterol() {
-   }
-
-
-
-
-
-
-
-
+    }
 
     public void hemoglobina (View view){
         new AlertDialog.Builder(this)
@@ -81,8 +69,6 @@ public class analisis extends AppCompatActivity {
     }
     public void AceptarHemoglobina() {
     }
-
-
 
     public void leucocitos (View view) {
         new AlertDialog.Builder(this)
@@ -109,7 +95,6 @@ public class analisis extends AppCompatActivity {
                         " a todas las partes del cuerpo. Son el tipo más común de células sanguíneas; " +
                         "absorben el oxígeno en los pulmones o las branquias de los peces y lo liberan en los tejidos.")
 
-
                 .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -120,8 +105,6 @@ public class analisis extends AppCompatActivity {
     }
     public void AceptarEritrocitos() {
     }
-
-
 
     public void urea (View view){
         new AlertDialog.Builder(this)
@@ -142,8 +125,6 @@ public class analisis extends AppCompatActivity {
     public void AceptarUrea() {
     }
 
-
-
     public void calcio (View view){
         new AlertDialog.Builder(this)
                 .setTitle("CALCIO")
@@ -151,7 +132,6 @@ public class analisis extends AppCompatActivity {
                         "función estructural en nuestro organismo al ser parte integrante de huesos y dientes." +
                         "Sin embargo, para la fijación del calcio en el sistema óseo es necesaria " +
                         "la presencia de Vitamina D.")
-
 
                 .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
                     @Override
@@ -162,17 +142,14 @@ public class analisis extends AppCompatActivity {
                 }).create().show();
     }
     public void AceptarCalcio() {
-
-
-
     }
+
+
     public void trigliceridos (View view){
         new AlertDialog.Builder(this)
                 .setTitle("TRIGLICERIDOS")
                 .setMessage("Los triglicéridos son un tipo de grasa que se encuentra en la sangre." +
                         " El exceso de este tipo de grasa puede aumentar el riesgo de enfermedad de las arterias coronarias")
-
-
 
                 .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
                     @Override
@@ -183,10 +160,9 @@ public class analisis extends AppCompatActivity {
                 }).create().show();
     }
     public void AceptarTrigliceridos() {
-
-
-
     }
+
+
     public void bilirrubina (View view){
         new AlertDialog.Builder(this)
                 .setTitle("BILIRRUBINAS")
@@ -205,16 +181,16 @@ public class analisis extends AppCompatActivity {
     }
     public void AceptarBilirrubina() {
 
-
-
     }
+
+
     public void ph (View view){
         new AlertDialog.Builder(this)
                 .setTitle("PH")
                 .setMessage("El pH es una forma de representar el carácter ácido, neutro o básico de una solución acuosa." +
                         " El agua pura está levemente disociada en iones H+ e iones OH- por partes iguales." +
                         "Cuando la cantidad de iones H+ es mayor a la de iones OH- la solución es ácida." +
-                        "En caso inverso la solución es básica..")
+                        "En caso inverso la solución es básica.")
 
 
                 .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
@@ -226,17 +202,14 @@ public class analisis extends AppCompatActivity {
                 }).create().show();
     }
     public void AceptarPh() {
-
-
-
     }
+
+
     public void bacterias(View view){
         new AlertDialog.Builder(this)
                 .setTitle("BACTERIAS")
                 .setMessage("Las bacterias son microorganismos unicelulares, con movilidad propia y que ostentan un muy pequeño " +
                         "tamaño y diversidad en su forma: esferas, barras, hélices, entre otras.")
-
-
 
                 .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
                     @Override
@@ -247,16 +220,13 @@ public class analisis extends AppCompatActivity {
                 }).create().show();
     }
     public void AceptarBacterias() {
-
-
-
     }
+
 
     public void Aceptar(){
         Intent explicit_intent;
         explicit_intent=new Intent(this,Inicio.class);
         startActivity(explicit_intent);
-
 
     }
 

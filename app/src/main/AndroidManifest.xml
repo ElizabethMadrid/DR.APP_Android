@@ -93,7 +93,12 @@
                 android:value=".menu2"/>
         </activity>
 
-    <activity android:name=".MainActivity">
+    <activity android:name=".MainActivity"
+        android:screenOrientation="portrait"
+        android:parentActivityName=".menu2">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".menu2"/>
 
     </activity>
 
