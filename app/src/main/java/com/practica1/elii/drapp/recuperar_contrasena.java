@@ -14,9 +14,11 @@ import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Properties;
+import java.util.Random;
 
 import javax.mail.Authenticator;
 import javax.mail.Message;
@@ -80,6 +82,9 @@ public class recuperar_contrasena extends AppCompatActivity implements View.OnCl
 
         //acept();
 
+        //Sección del Aleatorio
+
+
         correo = email.getText().toString();
         asunto = expediente.getText().toString()+" Recuperación de contraseña";
         mensaje = "Su nueva contraseña temporal es 'A025JH89D23' <br><br><br><br> No responda a este correo," +
@@ -102,6 +107,14 @@ public class recuperar_contrasena extends AppCompatActivity implements View.OnCl
 
         RetreiveFeedTask task = new RetreiveFeedTask();
         task.execute();
+    }
+
+    public void generate(View view) {
+        Random rand = new Random();
+        int number = rand.nextInt (1000)+2000;
+        TextView myText = (TextView) findViewById(R.id.pass);
+        String myString = String.valueOf(number);
+        myText.setText(myString);
     }
 
     class RetreiveFeedTask extends AsyncTask<String, Void, String> {
