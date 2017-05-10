@@ -53,7 +53,7 @@ public class recuperar_contrasena extends AppCompatActivity implements View.OnCl
         bEnviar.setOnClickListener(this);
         email = (AutoCompleteTextView)findViewById(R.id.email_recuperar_pass);
         expediente = (AutoCompleteTextView)findViewById(R.id.pass_recuperar_pass);
-        progress=(ProgressBar)findViewById(R.id.progressBar);
+
 
     }
 
@@ -83,11 +83,20 @@ public class recuperar_contrasena extends AppCompatActivity implements View.OnCl
         //acept();
 
         //Sección del Aleatorio
+        String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
+        StringBuilder salt = new StringBuilder();
+        Random rnd = new Random();
+
+        while (salt.length() < 10) { // length of the random string.
+            int index = (int) (rnd.nextFloat() * SALTCHARS.length());
+            salt.append(SALTCHARS.charAt(index));
+        }
+        String saltStr = salt.toString();
 
 
         correo = email.getText().toString();
         asunto = expediente.getText().toString()+" Recuperación de contraseña";
-        mensaje = "Su nueva contraseña temporal es 'A025JH89D23' <br><br><br><br> No responda a este correo," +
+        mensaje = "Su nueva contraseña temporal es: " + saltStr + "<br><br><br><br> No responda a este correo," +
                 " ya que solo es un servidor que le ayuda a recuperar su contraseña";
 
         Properties props = new Properties();
@@ -109,13 +118,6 @@ public class recuperar_contrasena extends AppCompatActivity implements View.OnCl
         task.execute();
     }
 
-    public void generate(View view) {
-        Random rand = new Random();
-        int number = rand.nextInt (1000)+2000;
-        TextView myText = (TextView) findViewById(R.id.pass);
-        String myString = String.valueOf(number);
-        myText.setText(myString);
-    }
 
     class RetreiveFeedTask extends AsyncTask<String, Void, String> {
 
